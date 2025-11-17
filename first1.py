@@ -1,5 +1,5 @@
 import streamlit as st
-from zai import ZhipuAiClient
+from zhupuai import ZhipuAiClient
 
 # 初始化客户端
 client = ZhipuAiClient(api_key=st.secrets['ZHIPU_API_KEY'])
@@ -61,5 +61,6 @@ if st.button('开始分析'):
                         st.error('出错了，请稍后重试😂')
             except Exception as e:
                 st.error('出错了，请稍后重试🤣')
+
 
 
